@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head content  -->
+    <head>
+        <!--   Title of website     -->
+        <title>Autism Ambassadors</title>
+        <!--     META charset       -->
+        <meta charset="UTF-8">
+        <!--   META viewport for scale on screen     -->
+        <meta name="viewport" content="initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!--   Custom stylesheet CSS     -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--    Font Awesome library    -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <!--    Custom Javascript scripts    -->
+        <script src="js/script.js"></script>
+    </head>
+<!--  Body content  -->
+    <body>
+<!--   Header content     -->
+        <header>
+            <!--      Container for social icons      -->
+            <div class="container">
+                <!--       Row for social icons in col bootstrap         -->
+                    <div class="col order-12">
+                        <!--       Link and social icons from fab fa icons below       -->
+                        <a href="https://www.facebook.com" target="_blank" class="share-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="share-btn twitter">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="share-btn linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank" class="share-btn google">
+                        <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+            <!--      horizonal rule line      -->
+            <hr style="border: 0.5px solid; margin-right: 50%;">
+            <!--      a link to home page      -->
+            <a href="index.html" style="text-decoration: none;">
+                <!--        text-header for website name  and unordered list below     -->
+                <ul class="text-header">
+                    <!--         list per header styles below           -->
+                    <li>
+                        <h2 class="c1">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c2">U</h2>
+                    </li>
+                    <li>
+                        <h2 class="c3">T</h2>
+                    </li>
+                    <li>
+                        <h2 class="c4">I</h2>
+                    </li>
+                    <li>
+                        <h2 class="c5">S</h2>
+                    </li>
+                    <li>
+                        <h2 class="c6">M</h2>
+                    </li> 
+                </ul>
+            </a>
+                       <a href="index.html" style="text-decoration: none;">
+                <ul class="text-header">
+                    <li>
+                        <h2 class="c7">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">M</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">B</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">S</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">S</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">D</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">O</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">R</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">S</h2>
+                    </li> 
+                </ul>
+            </a>
+            <hr style="border: 0.5px solid; margin-left: 50%;">
+        </header>
+        <!--    Nav content    -->
+        <nav>
+            <!--       menu-icon content for when in moblie     -->
+            <div class="menu-icon">
+                <!--        fa fa icon for moblie        -->
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <!--      Nav links for in moblie and browser      -->
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li class="active">
+                    <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a href="media.html">Media</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!--    Panel container for usability and accessability bar    -->
+        <div class="panel" >
+                <!--      NavBar container and for styles Horizonal  layer        -->
+                <div id="navBar" class="transparent">
+                    <ul>
+                        <li>
+                            <!--           drop down when clicking on icons                 -->
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-font"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <!--                  displays the font styles                  -->
+                                    <a class="arial" onclick="changeFontFamily('Arial, sans-serif')">Arial</a>
+                                    <a class="courier" onclick="changeFontFamily('Courier, monospace')">Courier</a>
+                                    <a class="times" onclick="changeFontFamily('serif')">Times New Roman</a>
+                                    <a class="comic" onclick="changeFontFamily('Comic Sans MS')">Comic Sans MS</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-palette"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <!--                  table of colours when clicked                  -->
+                                    <table style="width:50px;height:160px">
+                                        <tbody>
+                                            <!--                         shows the colours and from js of text                       -->
+                                            <tr>
+                                                <td onclick="turnblack()" style="background-color:#000000 "></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turnblue()" style="background-color:#0000ff "></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turnred()" style="background-color:#ff0000"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turngreen()" style="background-color:#008000"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-fill-drip"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <table style="width:50px;height:315px">
+                                        <tbody>
+                                            <!--                       shows the colours of background and from js of background                     -->
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ffffff"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#79a6d2"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ff6666"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#aaff80"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#9999ff"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#70dbdb"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ffa366"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#8f8f8f"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <!--                   shows icon and js increase text             -->
+                                <button class="dropbtn" type="button" id="plustext" onclick="resizeText(1)">
+                                <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <!--                   shows icon and js decrease text             -->
+                                <button class="dropbtn" type="button" id="minustext" onclick="resizeText(-1)">
+                                <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        <!--     tab to pull-me from js, styled and icon for pull-me  -->
+        <div class="pull-me">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <!--    main-content from use of js contents for background, text colour, fonts and sizes    -->
+        <div id="main-content" style="font-size: 1em;">
+            <div class="container">
+                <!--        js familyfont        -->
+                    <div id="familyfont">
+                        <!--           header style 1             -->
+                        <h1>News</h1>
+                        <!--              break line          -->
+                        <br>
+                        <hr>
+                        <!-- Breadcrumbs and ordered list-->
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="breadcrumb-item">News &gt; Articles</li>
+                        </ol>
+                        <!-- First Article -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a href="#">
+                                        <img class="img-fluid rounded" src="images/autismambassador.jpg" alt="Autism Ambassador">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2 class="card-title">Autism Ambassador meets a known expert for Autism</h2>
+                                        <p class="card-text">One of our Autism Ambassadors, Sasha Willden is a student in BSc Creative Computing at Goldsmiths, University of London. She met with a well-known expert, Francesca Happé at King's College London who specialises in the field of Autism Spectrum Disorders.</p>
+                                        
+                                        <p class="card-text">Sasha met with Francesca to discuss about with Autism, what to do after University and what support there is currently for Autistic people. Importantly, the meeting for Sasha was to reflect about Autism, her University progress as well as what to do after her degree, types of services and career. Sasha is wanting to develop in the near future applications, web plugins and other technical services to support those with the Autism spectrum disorder and other associated disorders.</p>
+                                        
+                                        <p class="card-text">Sasha is currently working on a Javascript plugin tab in web development and in her own time for web-based strategies for users have less burdens on websites to help those who are on the spectrum, associated disorders and other disabilities such as: visually impairment needing to increase/decrease font sizes, dyslexia to help with seeing clearly by change the colour of the background, colour blinded people who need to see the background or font in a different colour etc.</p>
+                                        <p class="card-text">The Javascript plugin tab is currently live, will continue to be improved and can be viewed at <a href="index.html">Autism Ambassadors</a>.</p>
+                                        
+                                        <p class="card-text">Sasha will continue to developmental projects similar to this one in her degree, hoping to network with experts for advice in that for her projects and to, later on, do an MSc Cognitive Neuroscience and after an PhD in an similar discipline (undecided what or where).</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted">
+                                Posted on January 4, 2019 by
+                                <a href="index.html">Autism Ambassador</a>
+                            </div>
+                        </div>
+                        <!-- Second Article -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a href="#">
+                                        <img title="Autism Ambassadors" alt="Presentation" class="img-fluid rounded" src="images/image9.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2 class="card-title">Presentation</h2>
+                                        <p class="card-text">The Autism Ambassadors delivered their award-winning presentation to volunteers from Havering Children’s Centres at the Autism Hub on Monday 6th August. The presentation was well attended with six volunteer Ambassadors and two other colleagues presenting to an audience of nine. An excellent question and answer session took place at the end of the presentation, where the Ambassadors spoke about some of their personal experiences.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted">
+                                Posted on August 9, 2018 by
+                                <a href="index.html">Autism Ambassador</a>
+                            </div>
+                        </div>
+                        <!-- Third Article -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a href="#">
+                                        <img class="img-fluid rounded" src="images/image6.jpg" alt="Blue-Badge-Law">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2 class="card-title">Blue Badge</h2>
+                                        <p class="card-text">There was good news last week for drivers among the ASD community as the government extended the blue badge disabled parking scheme to include ‘hidden disabilities’.</p>
+                                        <p>The Department of Transport has confirmed that from 2019, people with hidden disabilities - including autism, will be able to apply for blue badge parking permits which will enable them to park closer to their destinations. The scheme began in 1970 and around 2.4 million people in England have a permit.</p>
+                                        <p> Continue reading 
+                                            <a href="http://www.sycamoretrust.org.uk/latest/article/Blue-Badge-scheme-extended">here.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted">
+                                Posted on July 31, 2018 by
+                                <a href="index.html">Autism Ambassador</a>
+                            </div>
+                        </div>
+                        <!-- Pagination for newer and older -->
+                        <ul class="pagination justify-content-center mb-4">
+                            <li class="page-item">
+                                <a class="page-link" href="#">← Older</a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#">Newer →</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright © 
+                    <a href="index.html">Autism Ambassadors </a> - 2019 
+                    <a href="Report.html">(Report File)</a>
+                </p>
+            </div>
+        </footer>
+
+</body></html>

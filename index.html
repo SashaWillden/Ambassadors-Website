@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+        <!--   Title of website     -->
+        <title>Autism Ambassadors</title>
+        <!--     META charset       -->
+        <meta charset="UTF-8">
+        <!--   META viewport for scale on screen     -->
+        <meta name="viewport" content="initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!--   Custom stylesheet CSS     -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--    Font Awesome library    -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <!--    Custom Javascript scripts    -->
+        <script src="js/script.js"></script>
+    
+    <style>@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+}</style>
+    <script>$('#carouselExample').on('slide.bs.carousel', function (e) {
+
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 4;
+    var totalItems = $('.carousel-item').length;
+    
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
+});</script>
+    </head>
+   <!--  Body content  -->
+    <body>
+<!--   Header content     -->
+        <header>
+            <!--      Container for social icons      -->
+            <div class="container">
+                <!--       Row for social icons in col bootstrap         -->
+                    <div class="col order-12">
+                        <!--       Link and social icons from fab fa icons below       -->
+                        <a href="https://www.facebook.com" target="_blank" class="share-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="share-btn twitter">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="share-btn linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank" class="share-btn google">
+                        <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+            <!--      horizonal rule line      -->
+            <hr style="border: 0.5px solid; margin-right: 50%;">
+            <!--      a link to home page      -->
+            <a href="index.html" style="text-decoration: none;">
+                <!--        text-header for website name  and unordered list below     -->
+                <ul class="text-header">
+                    <!--         list per header styles below           -->
+                    <li>
+                        <h2 class="c1">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c2">U</h2>
+                    </li>
+                    <li>
+                        <h2 class="c3">T</h2>
+                    </li>
+                    <li>
+                        <h2 class="c4">I</h2>
+                    </li>
+                    <li>
+                        <h2 class="c5">S</h2>
+                    </li>
+                    <li>
+                        <h2 class="c6">M</h2>
+                    </li> 
+                </ul>
+            </a>
+                       <a href="index.html" style="text-decoration: none;">
+                <ul class="text-header">
+                    <li>
+                        <h2 class="c7">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">M</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">B</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">S</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">S</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">D</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">O</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">R</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">S</h2>
+                    </li> 
+                </ul>
+            </a>
+            <hr style="border: 0.5px solid; margin-left: 50%;">
+        </header>
+        <!--    Nav content    -->
+        <nav>
+            <!--       menu-icon content for when in moblie     -->
+            <div class="menu-icon">
+                <!--        fa fa icon for moblie        -->
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <!--      Nav links for in moblie and browser      -->
+            <ul>
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a href="media.html">Media</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!--    Panel container for usability and accessability bar    -->
+        <div class="panel" >
+                <!--      NavBar container and for styles Horizonal  layer        -->
+                <div id="navBar" class="transparent">
+                    <ul>
+                        <li>
+                            <!--           drop down when clicking on icons                 -->
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-font"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <!--                  displays the font styles                  -->
+                                    <a class="arial" onclick="changeFontFamily('Arial, sans-serif')">Arial</a>
+                                    <a class="courier" onclick="changeFontFamily('Courier, monospace')">Courier</a>
+                                    <a class="times" onclick="changeFontFamily('serif')">Times New Roman</a>
+                                    <a class="comic" onclick="changeFontFamily('Comic Sans MS')">Comic Sans MS</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-palette"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <!--                  table of colours when clicked                  -->
+                                    <table style="width:50px;height:160px">
+                                        <tbody>
+                                            <!--                         shows the colours and from js of text                       -->
+                                            <tr>
+                                                <td onclick="turnblack()" style="background-color:#000000 "></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turnblue()" style="background-color:#0000ff "></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turnred()" style="background-color:#ff0000"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turngreen()" style="background-color:#008000"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-fill-drip"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <table style="width:50px;height:315px">
+                                        <tbody>
+                                            <!--                       shows the colours of background and from js of background                     -->
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ffffff"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#79a6d2"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ff6666"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#aaff80"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#9999ff"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#70dbdb"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ffa366"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#8f8f8f"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <!--                   shows icon and js increase text             -->
+                                <button class="dropbtn" type="button" id="plustext" onclick="resizeText(1)">
+                                <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <!--                   shows icon and js decrease text             -->
+                                <button class="dropbtn" type="button" id="minustext" onclick="resizeText(-1)">
+                                <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        <!--     tab to pull-me from js, styled and icon for pull-me  -->
+        <div class="pull-me">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <!--    main-content from use of js contents for background, text colour, fonts and sizes    -->
+        <div id="main-content" style="font-size: 1em;">
+            <div class="container">
+                <!--        js familyfont        -->
+                    <div id="familyfont">
+                        <!--           header style 1             -->
+                        <h1>Welcome</h1>
+                        <!--              break line          -->
+                        <br>
+                        <hr>
+                        <!-- Breadcrumbs and ordered list-->
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="breadcrumb-item"></li>
+                        </ol>
+<!--           row for left right container             -->
+	<div class="row"><div class="container text-center my-3">
+        <h3>NEWS</h3>
+        <!-- News content -->
+                        <div class="card mb-4">
+                                <div class="row">    
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a href="news.html">
+                                        <img title="Autism Ambassadors" alt="Autism Ambassadors" class="img-fluid rounded" src="images/image9.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2 class="card-title">Presentation</h2>
+                                        <p class="card-text">The Autism Ambassadors delivered their award-winning presentation to volunteers from Havering Children’s Centres at the Autism Hub on Monday 6th August.</p>
+                                        <br>
+                                        Click <a href="news.html">here</a> to find out more.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+        <h3>ABOUT AND CONTACT</h3>
+                        <div class="card mb-4">
+                                <div class="row">    
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a href="about.html">
+                                        <img title="Autism Ambassadors" alt="People gathered" class="img-fluid rounded" src="images/image1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5>About</h5>
+                                        <p class="card-text">We provide presentions to all sectors in the borough upon request to companies and chairties.</p>
+                                        Know more about us on our <a href="about.html">about</a> page.
+                                        <br><br><br><br>
+                                        <h5>Contact</h5>
+                                        <p class="card-text">We provide presentions to all sectors in the borough upon request to companies and chairties.</p>
+                                        Interested in our services? Why not <a href="contact.html">contact us</a>.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+    <h3>MEDIA </h3>
+<!--  carousel  -->
+<div class="container-fluid">
+    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                            <a href="media.html">
+            <div class="carousel-item col-md-3 active">
+                <img class="img-fluid mx-auto d-block" src="images/image1.jpg" alt="slide 1">
+            </div>
+            <div class="carousel-item col-md-3">
+                <img class="img-fluid mx-auto d-block" src="images/image6.jpg" alt="slide 2">
+            </div>
+            <div class="carousel-item col-md-3">
+                <img class="img-fluid mx-auto d-block" src="images/image3.jpg" alt="slide 3">
+            </div>
+            <div class="carousel-item col-md-3">
+                <img class="img-fluid mx-auto d-block" src="images/image4.jpg" alt="slide 4">
+            </div>
+            <div class="carousel-item col-md-3">
+                <img class="img-fluid mx-auto d-block" src="images/image5.jpg" alt="slide 5">
+            </div>
+            <div class="carousel-item col-md-3">
+                <img class="img-fluid mx-auto d-block" src="images/image6.jpg" alt="slide 6">
+            </div>
+            <div class="carousel-item col-md-3">
+                <img class="img-fluid mx-auto d-block" src="images/image7.jpg" alt="slide 7">
+            </div>
+            <div class="carousel-item col-md-3">
+                <img class="img-fluid mx-auto d-block" src="images/image4.jpg" alt="slide 7">
+            </div>
+            </a>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left fa-lg text-muted"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+            <i class="fa fa-chevron-right fa-lg text-muted"></i>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+</div>
+        
+    </div>
+  </div>
+        
+        
+    </div>
+            </div>
+        
+
+
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright © 
+                    <a href="index.html">Autism Ambassadors </a> - 2019 
+                    <a href="Report.html">(Report File)</a>
+                </p>
+            </div>
+        </footer>
+
+</body></html>
+        
+        
+        
+        
+        
+        
+
+
+</body></html>

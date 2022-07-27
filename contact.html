@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+        <!--   Title of website     -->
+        <title>Autism Ambassadors</title>
+        <!--     META charset       -->
+        <meta charset="UTF-8">
+        <!--   META viewport for scale on screen     -->
+        <meta name="viewport" content="initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!--   Custom stylesheet CSS     -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--    Font Awesome library    -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <!--    Custom Javascript scripts    -->
+        <script src="js/script.js"></script>
+        <!--    Google Maps API    -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk6ok74JZ1VKolGbzUL08QPpDdjZk05lk&callback=initMap"
+    async defer></script>
+     </head>
+<!--  Body content  -->
+    <body>
+<!--   Header content     -->
+        <header>
+            <!--      Container for social icons      -->
+            <div class="container">
+                <!--       Row for social icons in col bootstrap         -->
+                    <div class="col order-12">
+                        <!--       Link and social icons from fab fa icons below       -->
+                        <a href="https://www.facebook.com" target="_blank" class="share-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="share-btn twitter">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="share-btn linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.google.com" target="_blank" class="share-btn google">
+                        <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+            <!--      horizonal rule line      -->
+            <hr style="border: 0.5px solid; margin-right: 50%;">
+            <!--      a link to home page      -->
+            <a href="index.html" style="text-decoration: none;">
+                <!--        text-header for website name  and unordered list below     -->
+                <ul class="text-header">
+                    <!--         list per header styles below           -->
+                    <li>
+                        <h2 class="c1">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c2">U</h2>
+                    </li>
+                    <li>
+                        <h2 class="c3">T</h2>
+                    </li>
+                    <li>
+                        <h2 class="c4">I</h2>
+                    </li>
+                    <li>
+                        <h2 class="c5">S</h2>
+                    </li>
+                    <li>
+                        <h2 class="c6">M</h2>
+                    </li> 
+                </ul>
+            </a>
+                       <a href="index.html" style="text-decoration: none;">
+                <ul class="text-header">
+                    <li>
+                        <h2 class="c7">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">M</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">B</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">S</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">S</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">A</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">D</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">O</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">R</h2>
+                    </li>
+                    <li>
+                        <h2 class="c7">S</h2>
+                    </li> 
+                </ul>
+            </a>
+            <hr style="border: 0.5px solid; margin-left: 50%;">
+        </header>
+        <!--    Nav content    -->
+        <nav>
+            <!--       menu-icon content for when in moblie     -->
+            <div class="menu-icon">
+                <!--        fa fa icon for moblie        -->
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <!--      Nav links for in moblie and browser      -->
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a href="media.html">Media</a>
+                </li>
+                <li class="active">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!--    Panel container for usability and accessability bar    -->
+        <div class="panel" >
+                <!--      NavBar container and for styles Horizonal  layer        -->
+                <div id="navBar" class="transparent">
+                    <ul>
+                        <li>
+                            <!--           drop down when clicking on icons                 -->
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-font"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <!--                  displays the font styles                  -->
+                                    <a class="arial" onclick="changeFontFamily('Arial, sans-serif')">Arial</a>
+                                    <a class="courier" onclick="changeFontFamily('Courier, monospace')">Courier</a>
+                                    <a class="times" onclick="changeFontFamily('serif')">Times New Roman</a>
+                                    <a class="comic" onclick="changeFontFamily('Comic Sans MS')">Comic Sans MS</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-palette"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <!--                  table of colours when clicked                  -->
+                                    <table style="width:50px;height:160px">
+                                        <tbody>
+                                            <!--                         shows the colours and from js of text                       -->
+                                            <tr>
+                                                <td onclick="turnblack()" style="background-color:#000000 "></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turnblue()" style="background-color:#0000ff "></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turnred()" style="background-color:#ff0000"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turngreen()" style="background-color:#008000"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-fill-drip"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <table style="width:50px;height:315px">
+                                        <tbody>
+                                            <!--                       shows the colours of background and from js of background                     -->
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ffffff"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#79a6d2"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ff6666"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#aaff80"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#9999ff"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#70dbdb"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ffa366"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#8f8f8f"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <!--                   shows icon and js increase text             -->
+                                <button class="dropbtn" type="button" id="plustext" onclick="resizeText(1)">
+                                <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <!--                   shows icon and js decrease text             -->
+                                <button class="dropbtn" type="button" id="minustext" onclick="resizeText(-1)">
+                                <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        <!--     tab to pull-me from js, styled and icon for pull-me  -->
+        <div class="pull-me">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <!--    main-content from use of js contents for background, text colour, fonts and sizes    -->
+        <div id="main-content" style="font-size: 1em;">
+            <div class="container">
+                <!--        js familyfont        -->
+                    <div id="familyfont">
+                        <!--           header style 1             -->
+                        <h1>Contact Us</h1>
+                        <!--              break line          -->
+                        <br>
+                        <hr>
+                        <!-- Breadcrumbs and ordered list-->
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="breadcrumb-item">Conact</li>
+                        </ol>
+<!--           row for left right container             -->
+	<div class="row">
+        <!--    left side row    -->
+	  <div class="col-md-7">
+          <!--      map container for maps js    -->
+           <div id="map"></div>
+      </div>
+
+        <!--     right side row   -->
+              <div class="col-md-5">
+                  <!--       header style 3 in strong           -->
+          <h3><strong>Get in Touch</strong></h3>
+                  <!--            form container      -->
+<div class="form"></div>
+                  <!--           PHP form for inputs, ids, placeholders and data     -->
+                  <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name." placeholder="Name">
+                <p class="help-block"></p>
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number." placeholder="Phone">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address." placeholder="E-mail">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <textarea rows="4" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div id="success"></div>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+          </form>
+          <br>
+      </div>
+    </div>
+  </div>
+        
+        
+    </div>
+            </div>
+
+
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright © 
+                    <a href="index.html">Autism Ambassadors </a> - 2019 
+                    <a href="Report.html">(Report File)</a>
+                </p>
+            </div>
+        </footer>
+        
+            <!-- Contact form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the contact_me.php file. -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+</body></html>
